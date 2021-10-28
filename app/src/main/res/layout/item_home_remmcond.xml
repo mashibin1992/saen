@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:background="@drawable/icon_list1"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9.5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_contnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="9.5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/iv"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#ff666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_pirce"
+        android:layout_marginLeft="9.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_contnt"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/iv"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#ffe13838"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#DDDDDD"
+
+        />
+</RelativeLayout>

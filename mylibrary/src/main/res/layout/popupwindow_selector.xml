@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/pop_text_quxiao_hw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:text="取消"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/pop_text_queren_hw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:text="确认"
+            android:textColor="@color/mainColor"
+            android:textSize="@dimen/sp_17" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.jiangjun.library.widget.WheelView
+            android:id="@+id/pop_wheelView_sex_hw"
+            app:itemNumber="3"
+            app:lineColor="@color/white"
+            android:layout_width="@dimen/dp_150"
+            app:lineHeight="1.3dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/colorGray"
+            app:selectedTextColor="@color/mainColor"
+            app:normalTextSize="@dimen/sp_15"
+            app:selectedTextSize="@dimen/sp_17"
+            app:maskHeight="@dimen/dp_48"
+            app:unitHeight="@dimen/dp_50"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

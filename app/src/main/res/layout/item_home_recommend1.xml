@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:id="@+id/linear_1"
+    tools:context=".ui.questionbank.activity.AnswerActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_dayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_type_dayi"
+            android:layout_width="42dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_ffeaea_c4"
+            android:gravity="center"
+            android:text="热门"
+            android:textColor="#ffda5c5c"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="25dp"
+            android:text=""
+            android:textColor="#ff333333"
+            android:textSize="17sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/tv_type_dayi"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+        <RelativeLayout
+            android:id="@+id/rely"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_f8f8f8_c5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_type_dayi">
+
+            <TextView
+                android:id="@+id/tv_dayi_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.5dp"
+                android:layout_marginTop="15.5dp"
+                android:text="答："
+                android:textColor="#ff333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_dayi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14.5dp"
+                android:layout_marginRight="18.5dp"
+                android:layout_marginBottom="13.5dp"
+                android:layout_toRightOf="@+id/tv_dayi_1"
+                android:text=""
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+android:id="@+id/linear_img"
+android:layout_height="82dp"
+android:layout_marginLeft="17dp"
+android:layout_marginRight="17dp"
+android:layout_marginTop="14dp"
+android:layout_width="match_parent"
+
+    >
+
+<ImageView
+    android:background="@mipmap/ic_launcher"
+    android:id="@+id/iv_1"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+
+    />
+
+<ImageView
+    android:background="@mipmap/ic_launcher"
+    android:id="@+id/iv_2"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+
+    />
+
+<ImageView
+    android:background="@mipmap/ic_launcher"
+    android:id="@+id/iv_3"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+
+    />
+
+</LinearLayout><View
+android:background="#DDDDDD"
+android:layout_height="0.5dp"
+android:layout_marginLeft="16dp"
+android:layout_marginRight="16dp"
+android:layout_marginTop="20dp"
+android:layout_width="match_parent"
+app:layout_constraintTop_toBottomOf="@+id/linear_img"
+
+    />
+
+    </LinearLayout>

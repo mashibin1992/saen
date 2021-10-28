@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sort_guide_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.home.SortGuideActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/dp_33"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/icon_arrow_lift"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dp_74"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_542"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_205"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_marginBottom="@dimen/dp_74"
+                    android:background="@drawable/sort_shape_guide_rect_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.646"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_509"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:background="@drawable/sort_shape_guide_rect_2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_number_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_32"
+                                android:background="@drawable/sort_guide_sequence_blue"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="@dimen/sp_14" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/dp_54"
+                                android:layout_marginLeft="@dimen/dp_43"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@color/color_D5D5D5" />
+
+                            <TextView
+                                android:id="@+id/tv_number_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_32"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@drawable/sort_guide_sequence_gray"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="@dimen/sp_14" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/dp_54"
+                                android:layout_marginLeft="@dimen/dp_43"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@color/color_D5D5D5" />
+
+                            <TextView
+                                android:id="@+id/tv_number_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_32"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@drawable/sort_guide_sequence_gray"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="@dimen/sp_14" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/dp_54"
+                                android:layout_marginLeft="@dimen/dp_43"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@color/color_D5D5D5" />
+
+                            <TextView
+                                android:id="@+id/tv_number_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_32"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@drawable/sort_guide_sequence_gray"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="@dimen/sp_16" />
+
+                            <View
+                                android:layout_width="0.5dp"
+                                android:layout_height="@dimen/dp_54"
+                                android:layout_marginLeft="@dimen/dp_43"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@color/color_D5D5D5" />
+
+                            <TextView
+                                android:id="@+id/tv_number_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_32"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:background="@drawable/sort_guide_sequence_gray"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="@dimen/sp_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:gravity="center|center_vertical"
+                                android:paddingRight="@dimen/dp_23">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="报名时间"
+                                        android:textSize="@dimen/sp_19"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_register_date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:text="3月10日-31日"
+                                        android:textSize="@dimen/sp_14" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_sign_up"
+                                    android:layout_width="@dimen/dp_104"
+                                    android:layout_height="@dimen/dp_40"
+                                    android:background="@drawable/sort_guide_btn_bg_gray"
+                                    android:gravity="center"
+                                    android:text="已截止"
+                                    android:textColor="@color/color_666666" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginTop="@dimen/dp_38"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="准考证打印"
+                                        android:textSize="@dimen/sp_19"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_print_date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:text="3月10日-31日"
+                                        android:textSize="@dimen/sp_14" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_print"
+                                    android:layout_width="@dimen/dp_105"
+                                    android:layout_height="@dimen/dp_40"
+                                    android:layout_marginRight="@dimen/dp_23"
+                                    android:background="@drawable/sort_guide_btn_bg_blue"
+                                    android:gravity="center"
+                                    android:text="未开始"
+                                    android:textColor="@color/color_666666" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginTop="@dimen/dp_38"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="考试时间"
+                                        android:textSize="@dimen/sp_19"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/examination_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:text="3月10日-31日"
+                                        android:textSize="@dimen/sp_14" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/examination"
+                                    android:layout_width="@dimen/dp_105"
+                                    android:layout_height="@dimen/dp_40"
+                                    android:layout_marginRight="@dimen/dp_23"
+                                    android:background="@drawable/sort_guide_btn_bg_blue"
+                                    android:gravity="center"
+                                    android:text="未开始"
+                                    android:textColor="@color/color_666666" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginTop="@dimen/dp_38"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="成绩查询"
+                                        android:textSize="@dimen/sp_19"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/tv_inquiry_type_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:text="3月10日-31日"
+                                        android:textSize="@dimen/sp_14" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_inquiry_type"
+                                    android:layout_width="@dimen/dp_105"
+                                    android:layout_height="@dimen/dp_40"
+                                    android:layout_marginRight="@dimen/dp_23"
+                                    android:background="@drawable/sort_guide_btn_bg_blue"
+                                    android:gravity="center"
+                                    android:text="未开始"
+                                    android:textColor="@color/color_666666" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_16"
+                                android:layout_marginTop="@dimen/dp_38"
+                                android:gravity="center_vertical">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="领合格证"
+                                        android:textSize="@dimen/sp_19"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/collection_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:text="3月10日-31日"
+                                        android:textSize="@dimen/sp_14" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/collectionType"
+                                    android:layout_width="@dimen/dp_105"
+                                    android:layout_height="@dimen/dp_40"
+                                    android:layout_marginRight="@dimen/dp_23"
+                                    android:background="@drawable/sort_guide_btn_bg_blue"
+                                    android:gravity="center"
+                                    android:text="未开始"
+                                    android:textColor="@color/color_666666" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_214"
+                    android:layout_marginTop="@dimen/dp_95"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:src="@drawable/sort_guide_user"
+                    tools:ignore="MissingConstraints" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

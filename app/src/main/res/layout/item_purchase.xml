@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_15">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_bit"
+            android:layout_width="@dimen/dp_144"
+            android:layout_height="@dimen/dp_90"
+            android:src="@drawable/select_course_item_arrow"
+            tools:ignore="MissingConstraints" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/is_free"-->
+<!--            android:layout_width="@dimen/dp_36"-->
+<!--            android:layout_height="@dimen/sp_19"-->
+<!--            android:background="@drawable/bg_select_course_angle_mark"-->
+<!--            android:gravity="center"-->
+<!--            android:text="免费"-->
+<!--            android:textColor="@color/color_FFFFFF"-->
+<!--            android:textSize="@dimen/sp_12" />-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/frameLayout"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="中级零基础《初级会计实务》…"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/practice_first_pb"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="@dimen/dp_130"
+                android:layout_height="@dimen/dp_11"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:max="120"
+                android:progress="20"
+                android:progressDrawable="@drawable/layer_list_progress_drawable"
+                app:layout_constraintBottom_toBottomOf="@+id/practice_first_jd"
+                app:layout_constraintLeft_toLeftOf="@+id/practice_first_title"
+                app:layout_constraintTop_toTopOf="@+id/practice_first_jd" />
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_weight="1"
+                android:text="10/120课时"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_13"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="144dp"
+                tools:layout_editor_absoluteY="139dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="截止：2021-09-22"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="144dp"
+                tools:layout_editor_absoluteY="139dp" />
+
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:layout_marginRight="@dimen/dp_15"
+                android:text="继续学习"
+                android:textColor="@color/color_5F7DFF"
+                android:textSize="@dimen/sp_14"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="144dp"
+                tools:layout_editor_absoluteY="139dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_1"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_16"
+        android:background="@color/color_DDDDDD"
+        android:visibility="gone" />
+</RelativeLayout>

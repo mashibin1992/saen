@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="31.5dp"
+        android:background="@mipmap/ic_launcher"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="31.5dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/iv"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        android:text="老师，请问一下，6月份采购一批材料，已付款，货已收到了，但是怎么安装呢？"
+        android:textColor="#ff141414"
+        android:textSize="15sp" />
+    <RelativeLayout
+        android:id="@+id/rely"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="23.5dp"
+            android:layout_height="23.5dp"
+            android:layout_marginLeft="8dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:includeFontPadding="false"
+            android:text="王安"
+            android:textColor="#ff4c4c4c"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.5dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:includeFontPadding="false"
+            android:text="解答"
+            android:textColor="#ff666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="73阅读 ｜07-02"
+            android:textColor="#ff999999"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/rely"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        android:background="#DDDDDD"
+
+        />
+</RelativeLayout>

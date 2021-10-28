@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="app_name" translatable="false">萨恩课堂</string>
+
+    <!--main-->
+    <string name="main_tab1" translatable="false">首页</string>
+    <string name="main_tab2" translatable="false">选课</string>
+    <string name="main_tab3" translatable="false">学习</string>
+    <string name="main_tab4" translatable="false">题库</string>
+    <string name="main_tab5" translatable="false">我的</string>
+    <!--分类-->
+    <string name="sort_title" translatable="false">请选择您的学习方向</string>
+    <string name="sort_bottom_btn" translatable="false">请选择辅导</string>
+    <string name="sort_question_bank_title">题库</string>
+    <string name="sig_up_now">立即报名</string>
+    <string name="course_title">我的课程</string>
+
+    <string name="anwser_tv_title">
+        <Data><![CDATA[<font color="#db3c27">*</font><fontcolor="#333333">问题</font>]]>
+        </Data>
+    </string>
+    <string name="live_course_title">直播课程</string>
+    <string name="tv_not_started">未开始</string>
+    <string name="have_in_hand">进行中</string>
+    <string name="has_ended">已结束</string>
+
+
+
+    <string name="switch_msg" translatable="false">切换到短信登录页面</string>
+    <string name="custom_title" translatable="false">自定义标题</string>
+    <string name="custom_slogan" translatable="false">自定义Slogan</string>
+    <string name="custom_toast" translatable="false">同意服务条款才可以登录</string>
+</resources>

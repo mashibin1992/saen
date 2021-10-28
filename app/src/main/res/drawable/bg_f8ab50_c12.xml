@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- rectangle表示为矩形 -->
+
+    <!-- 填充的颜色 -->
+    <solid android:color="#f8ab50" />
+
+    <!-- android:radius 圆角的半径 -->
+    <corners android:topLeftRadius="12dp" android:topRightRadius="0dp" android:bottomLeftRadius="12dp" android:bottomRightRadius="12dp" />
+
+</shape>

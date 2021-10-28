@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white_0">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_00">#00000000</color>
+    <color name="black_3">#30000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_40">#66949494</color><!-- 40%透明度的灰色 -->
+    <color name="mainTabColor">#5F7DFF</color>
+    <color name="mainColor">#5D7DFF</color>
+    <color name="mainColor_14">#14F23A3A</color>
+    <color name="mainColor_10">#10F23A3A</color>
+
+    <color name="black3">#FF979797</color>
+    <color name="view_F7F7F7">#F7F7F7</color>
+    <color name="gray">#949494</color> <!-- 灰色 -->
+    <color name="label_color">#838383</color>
+    <color name="value_color">#2c2c2c</color>
+    <color name="line_color">#e3e3e3</color>
+    <color name="color_999999">#999999</color>
+    <color name="view_F6F6F6">#F6F6F6</color>
+
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="color_E5E6F7">#E5E6F7</color>
+    <color name="color_yellow">#60DD54</color>
+    <color name="colorGray">#555555</color>
+    <color name="lightBlack">#545454</color>
+    <color name="grayC6">#c6c6c6</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_BBBBBB">#bbbbbb</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_494848">#494848</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <color name="color_26575c">#26575c</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_E5">#e5e5e5</color>
+    <color name="color_B8B8B8">#B8B8B8</color>
+    <color name="color_555555">#555555</color>
+
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="split_line_bootom_color">#ffa8adb3</color>
+    <color name="colorPrimary">#008577</color>
+    <!--Zxing相关-->
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="qmui_config_color_separator">#DEE0E2</color>
+</resources>

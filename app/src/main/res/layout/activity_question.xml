@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <ImageView
+                android:id="@+id/question_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_20"
+                android:src="@drawable/ic_common_arrow_left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_js"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/question_js"
+                android:drawablePadding="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:text="计时"
+                android:textColor="@color/color_888888"
+                android:textSize="@dimen/sp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jx"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_jx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/question_jx"
+                android:drawablePadding="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:text="解析"
+                android:textColor="@color/color_888888"
+                android:textSize="@dimen/sp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_dtk"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_dtk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/question_dtk"
+                android:drawablePadding="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:text="答题卡"
+                android:textColor="@color/color_888888"
+                android:textSize="@dimen/sp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jj"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_jj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/question_jj"
+                android:drawablePadding="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_10"
+                android:text="交卷"
+                android:textColor="@color/color_888888"
+                android:textSize="@dimen/sp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_more"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/question_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_13"
+                android:src="@drawable/question_more"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e0e0e0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="单选题"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/question_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_44"
+                android:src="@drawable/question_tag"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/question_unTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_44"
+                android:src="@drawable/question_untag"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/question_collectioned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_12"
+                android:src="@drawable/question_collectioned"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/question_uncollection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dp_12"
+                android:src="@drawable/question_uncollection"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/question_jd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_jd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_15"
+                android:text="1/14"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.bjsn909429077.stz.widget.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sliding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                sothree:umanoDragView="@+id/dragView"
+                sothree:umanoOverlay="true"
+                sothree:umanoPanelHeight="45dp"
+                sothree:umanoParallaxOffset="0dp"
+                sothree:umanoScrollableView="@+id/list"
+                sothree:umanoShadowHeight="1dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_50">
+
+                    <com.bjsn909429077.stz.widget.QuestionViewPager
+                        android:id="@+id/readerViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/shadowView"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadow_right_light" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/dragView"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f2f2f2" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </com.bjsn909429077.stz.widget.SlidingUpPanelLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_more_ll"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_13"
+        android:background="@drawable/question_more_bg"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                android:id="@+id/question_more_jsq"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/question_more_jsq"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center"
+                android:text="计算器"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/sp_13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                    android:id="@+id/question_more_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_hollow_rectangle_ffffff_dddddd_3"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:text="小"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                    android:id="@+id/question_more_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_rectangle_5f7dff_2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:text="中"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                    android:id="@+id/question_more_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_hollow_rectangle_ffffff_dddddd_3"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_2"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:text="大"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.bjsn909429077.stz.widget.ChangeTextSizeView
+                    android:id="@+id/question_more_automatic_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="自动下一题"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <CheckBox
+                    android:id="@+id/question_more_automatic"
+                    android:layout_width="@dimen/dp_22"
+                    android:layout_height="@dimen/dp_13"
+                    android:background="@drawable/question_more_automatic_state"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

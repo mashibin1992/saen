@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_F8F8F8"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_34">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/practice_second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_22"
+            android:text="第一章"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/practice_second_pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_11"
+            android:layout_gravity="center_vertical"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/layer_list_progress_drawable"
+            app:layout_constraintBottom_toBottomOf="@+id/practice_second_jd"
+            app:layout_constraintLeft_toLeftOf="@+id/practice_second_title"
+            app:layout_constraintTop_toTopOf="@+id/practice_second_jd" />
+
+        <TextView
+            android:id="@+id/practice_second_jd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="12/23"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintLeft_toRightOf="@+id/practice_second_pb"
+            app:layout_constraintTop_toBottomOf="@+id/practice_second_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/practice_second_dtbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/circle_rectangle_5f7dff_5"
+            android:padding="@dimen/dp_5"
+            android:text="答题报告"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/practice_second_jxdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/circle_rectangle_5f7dff_5"
+            android:padding="@dimen/dp_5"
+            android:text="继续答题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/practice_second_cxdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_rectangle_da555f_5"
+            android:padding="@dimen/dp_5"
+            android:text="重新答题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

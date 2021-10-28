@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:layout_marginLeft="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_16"
+    android:background="@drawable/circle_rectangle_ffffff_5"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/option_tv1"
+        android:layout_width="@dimen/dp_27"
+        android:layout_height="@dimen/dp_27"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/circle_hollow_363636_ffffff"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/color_141414"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+
+    <!--选项的文字描述-->
+    <TextView
+        android:id="@+id/option_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_weight="1"
+        android:textColor="@color/color_141414"
+        android:textSize="@dimen/sp_15" />
+
+    <!--选项的图片描述-->
+    <ImageView
+        android:id="@+id/option_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_13"
+        android:paddingBottom="@dimen/dp_5"
+        android:src="@drawable/question_free"
+        android:visibility="gone" />
+
+</LinearLayout>

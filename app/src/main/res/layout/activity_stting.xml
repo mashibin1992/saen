@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my.activity.SettingActivity">
+
+
+    <com.ruffian.library.widget.RLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@color/color_DDDDDD"
+        android:showDividers="middle"
+        android:layout_marginHorizontal="@dimen/dp_15"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/but_edit_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="更换"
+                android:textColor="@color/color_4c6cf4"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/but_edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="修改密码"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/but_cancellation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号注销"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="账号注申请后7日内通知您注销情况"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信绑定"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+            <TextView
+                android:id="@+id/but_bind_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="未绑定"
+                android:textColor="@color/color_4c6cf4"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清空缓存"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+            <TextView
+                android:id="@+id/but_empty_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="0mb"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检查更新"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+            <TextView
+                android:id="@+id/but_up_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableRight="@drawable/icon_arrow_right_2"
+                android:text="1.0.0"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/but_outLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出登录"
+                android:textColor="@color/color_141414"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+
+
+    </com.ruffian.library.widget.RLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:layout_marginHorizontal="@dimen/dp_15"
+        android:background="@color/color_DDDDDD"
+        />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':app', ':mylibrary', ':library',':polyvLiveCommonModul',':polyvLiveCloudClassScene'
+rootProject.name='萨恩课堂'

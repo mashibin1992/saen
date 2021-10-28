@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="22.5dp"
+        android:layout_width="4dp"
+        android:layout_height="20.5dp"
+        android:background="@drawable/icon_wenda4"
+        />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_toRightOf="@+id/view"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="选择类别"
+        android:textColor="#ff424242"
+        android:textSize="18sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_pop"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/tv"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="4.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_button"
+        android:layout_below="@+id/recycler_pop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="确定"
+        android:background="#5F7DFF"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

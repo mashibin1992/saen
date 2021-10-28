@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.home.SortHomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/icon_sort_back"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/sort_tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_6"
+            android:text="问答细则"
+            android:textColor="#141414"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="4dp"
+            android:layout_height="20.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25.5dp"
+            android:background="@drawable/icon_wenda4" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/view"
+            android:includeFontPadding="false"
+            android:text="问答权限"
+            android:textColor="#ff141414"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:text="1、普通注册用户可享受免费答疑服务"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="324dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:text="2、答疑卡付费用户有限期内可享受免费答疑服务"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="4dp"
+            android:layout_height="20.5dp"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/icon_wenda4" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/view1"
+            android:includeFontPadding="false"
+            android:text="问答规则"
+            android:textColor="#ff141414"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="19.5dp"
+            android:includeFontPadding="false"
+            android:text="1、禁止发布违法、交易、推广、广告类信息，刷屏用户一律冻结账号"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv4"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="19.5dp"
+            android:includeFontPadding="false"
+            android:text="2、尽可能详细描述您的问题，一事一问，与问答无关的 信息将被删除"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="19.5dp"
+            android:includeFontPadding="false"
+            android:text="3、同一问题、用户最多可追问3次，追问3次或超48小时 后问题自动关闭"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="4dp"
+            android:layout_height="20.5dp"
+            android:layout_below="@+id/tv6"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22.5dp"
+            android:background="@drawable/icon_wenda4" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv6"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/view1"
+            android:includeFontPadding="false"
+            android:text="免责声明"
+            android:textColor="#ff141414"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv7"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="19.5dp"
+            android:text="1、内容发布者需要对所发布的内容负责，并由该内容的
+发布者承担全部法律责任及连带责任"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv8"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="19.5dp"
+            android:text="2、本平台所提供的答疑内容仅供参考，不对依赖相关内 容所做出的决策或行动承担任何责任"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv9"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="19.5dp"
+            android:text="3、鉴于部分财税政策适用具有较强时效性和区域性，请 依据当地现行政策酌情参考相内容"
+            android:textColor="#ff555555"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_botton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_5f7dff_c5"
+            android:gravity="center"
+            android:text="购买会员"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

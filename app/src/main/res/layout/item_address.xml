@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:orientation="vertical"
+    tools:context=".ui.home.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle_rectangle_ffffff_5"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#ff141414"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#ff666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="284dp"
+            android:layout_height="21dp"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#ff141414"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="14dp"
+            android:background="#DDDDDD" />
+
+        <ImageView
+            android:id="@+id/iv_xiugai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="34dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/icon_xiugai" />
+
+        <LinearLayout
+            android:id="@+id/linear_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:paddingTop="11dp">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/img_select"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/view"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_select"
+                android:text="默认地址"
+                android:textColor="#ff777777"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignParentRight="true"
+            android:paddingTop="9.5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="删除"
+            android:textColor="#ff777777"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</RelativeLayout>

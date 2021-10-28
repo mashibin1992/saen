@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".ui.home.SearchActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:paddingTop="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler"
+            tools:listitem="@layout/item_address"
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+
+        >
+        <TextView
+            android:id="@+id/tv_add"
+            android:gravity="center"
+            android:background="@drawable/bg_5f7dff_c5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="11.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="+ 添加收获地址"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

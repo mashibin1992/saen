@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 应用的主要色调,actionBar默认使用该颜色，Toolbar导航栏的底色 -->
+        <item name="colorPrimary">@color/white</item>
+        <!-- 应用的主要暗色调,statusBarColor 默认使用该颜色 -->
+        <item name="colorPrimaryDark">@color/white</item>
+
+
+        <!-- WindowBackground，可以设置@drawable，颜色引用（@color），不能设置颜色值（#fffffff），
+        Window区域说明：Window涵盖整个屏幕显示区域，包括StatusBar的区域。当windowOverscan=false时，
+        window的区域比Activity多出StatusBar，当windowOverscan=true时，window区域与Activity相同-->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- 一般控件的选中效果默认采用该颜色,如 CheckBox,RadioButton,SwitchCompat，ProcessBar等-->
+        <item name="colorAccent">@color/mainColor</item>
+        <!-- 设置背景透明，右滑时才能看到上一个界面，否则会看到黑屏效果-->，
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="SpalshTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- 全屏显示，隐藏状态栏、导航栏、底部导航栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/color_eeeeee</item>
+    </style>
+
+
+    <style name="myNavigationDrawerStyle">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!--    进度条-->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_bg</item>
+    </style>
+
+    <declare-styleable name="FontSizeView">
+        <attr name="lineWidth" format="dimension|reference" />
+        <attr name="lineColor" format="color|reference" />
+        <attr name="totalCount" format="integer" />
+        <attr name="circleColor" format="color|reference" />
+        <attr name="circleRadius" format="dimension|reference" />
+
+        <attr name="textFontColor" format="color|reference" />
+        <attr name="smallSize" format="integer" />
+        <attr name="standerSize" format="integer" />
+        <attr name="bigSize" format="integer" />
+        <attr name="defaultPosition" format="integer" />
+    </declare-styleable>
+
+    <!--时间选择器动画-->
+    <style name="DateSeleteStyle" parent="android:Animation">
+        <!--//进入时的动画-->
+        <item name="android:windowExitAnimation" tools:ignore="DuplicateDefinition">@anim/date_put_anim</item>
+        <!--//退出时的动画-->
+        <item name="android:windowExitAnimation" tools:ignore="DuplicateDefinition">@anim/date_out_anim</item>
+    </style>
+
+</resources>

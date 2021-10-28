@@ -1,0 +1,92 @@
+apply plugin: 'com.android.library'
+
+android {
+    def versions = rootProject.ext.versions
+    compileSdkVersion versions.compileSdkVersion
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.sdkCompileVersion
+        versionCode versions.versionCode
+        versionName versions.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:29.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //Novate网络请求
+    api 'com.tamic.novate:novate:1.5.4.5'
+    //BaseQuickAdapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    api 'com.android.support:recyclerview-v7:29.+'
+    //PhotoFactory 查看大图
+    api 'com.github.AnliaLee:PhotoFactory:1.0.1'
+    //eventbus
+    api 'org.greenrobot:eventbus:3.0.0'
+    //图片加载
+    api 'com.libin.imageloader:ImageLoader:1.0.3'
+
+    //阴影效果
+    api 'com.android.support:cardview-v7:27.1.1'
+    //
+    //    //右滑退出
+    //    api dependencies.suport.swipebacklayout
+    //图片压缩
+    api 'top.zibin:Luban:1.1.8'
+
+    //zxing
+    api files('libs/core-3.0.0.jar')
+
+    //拍照
+    api project(':library')
+    //banner
+    api 'com.youth.banner:banner:2.1.0'
+    //AndroidUtilCode  https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
+    api 'com.blankj:utilcodex:1.29.0'
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    //图片加载库，用于加载图片
+    api 'com.github.bumptech.glide:glide:4.9.0'
+
+
+
+    api 'com.google.android.material:material:1.0.0'
+
+    // 其他依赖
+    api 'com.facebook.fresco:fresco:0.12.0'
+
+    // 支持 GIF 动图，需要添加
+    api 'com.facebook.fresco:animated-gif:0.12.0'
+
+    // 支持 WebP （静态图+动图），需要添加
+    api 'com.facebook.fresco:animated-webp:0.12.0'
+    api 'com.facebook.fresco:webpsupport:0.12.0'
+
+    // 仅支持 WebP 静态图，需要添加
+    api 'com.facebook.fresco:webpsupport:0.12.0'
+
+
+    // 屏幕适配
+    api 'me.jessyan:autosize:1.2.1'
+}
+
+

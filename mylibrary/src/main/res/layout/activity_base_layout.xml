@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view_head"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"/>
+
+    <com.jiangjun.library.utils.CommonTitleView
+        android:id="@+id/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:ct_background="@color/white"
+        app:ct_left_icon="@drawable/ic_common_arrow_left" />
+
+
+    <View
+        android:id="@+id/common_title_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e0e0e0"
+        android:visibility="gone" />
+
+</LinearLayout>

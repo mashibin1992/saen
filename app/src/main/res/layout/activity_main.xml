@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <com.jiangjun.library.widget.NoScrollViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_F7F7F7" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_view"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@android:color/white"
+        app:itemIconTint="@drawable/main_tab_pic_color_selector"
+        app:itemTextColor="@drawable/main_tab_text"
+        app:itemIconSize="20dp"
+        app:labelVisibilityMode="labeled"
+        android:theme="@style/myNavigationDrawerStyle"
+        app:menu="@menu/menu_main"/>
+
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/white"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/main_tab_home"-->
+<!--            style="@style/main_tab_bottom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/main_tab_1"-->
+<!--            android:paddingTop="@dimen/dp_5"-->
+<!--            android:text="@string/main_tab1" />-->
+
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/main_tab_shopping"-->
+<!--            style="@style/main_tab_bottom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/main_tab_3"-->
+<!--            android:paddingTop="@dimen/dp_5"-->
+<!--            android:text="@string/main_tab3" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/main_tab_my"-->
+<!--            style="@style/main_tab_bottom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableTop="@drawable/main_tab_4"-->
+<!--            android:paddingTop="@dimen/dp_5"-->
+<!--            android:text="@string/main_tab4" />-->
+
+
+
+<!--    </RadioGroup>-->
+
+
+</LinearLayout>

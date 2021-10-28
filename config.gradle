@@ -1,0 +1,13 @@
+ext {
+    // app 相关版本控制
+    versions = [
+            minSdkVersion    : 21,//版本号最低支持5.0
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            applicationId    : "com.bjsn909429077.stz",
+            sdkCompileVersion: 29,
+            toolsBuildVersion: "29.0.2",
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+}
